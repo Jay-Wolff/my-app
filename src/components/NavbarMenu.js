@@ -10,11 +10,11 @@ const NavbarMenu = () => {
         <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          <Navbar.Brand href="#home">JanissaAbreu.dev</Navbar.Brand>
+          <Nav className="topnav-left">
+            <Nav.Link href="#home">About Me {" "} | </Nav.Link>
+            <Nav.Link href="#features"> Speaking {" "} |</Nav.Link>
+            <Nav.Link href="#pricing"> {" "} Contact</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

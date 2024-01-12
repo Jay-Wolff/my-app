@@ -1,0 +1,41 @@
+.MainBody{
+    
+}
+
+.SecondBody{
+    
+}
+
+.profileimage{
+    border-radius: 25%;
+    height: auto;
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+}
+
+.spacingforbutton{
+    padding: 10%;
+    padding-bottom: 10%;
+    margin: 5%;
+}
+
+.Contactsheet{
+   
+}
+
+.footericon{
+    justify-content: center !important;
+    padding-top: 10px !important;
+    display: inline-block !important;
+    position: relative !important;
+    padding-inline-start: 0 !important;
+}
+
+.socialicon-list{
+    display: inline-block !important;
+    padding-left: 15px;
+    height: 60px;
+    size: 70%;
+ }
+
