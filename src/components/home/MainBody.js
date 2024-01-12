@@ -5,6 +5,7 @@ import profileSpeaking from '../../assets/jayspeaking.jpg';
 //can call other js files with import and manipulate them on their original js file
 import ContactForm from '../home/ContactForm';
 
+
 const MainBody = () => {
     
     /* styles that can be called later in the code*/
@@ -40,10 +41,15 @@ const MainBody = () => {
     return (
     <>
         <div className='MainBody'>
-        <Container>
-            <div style={styleHeading}> 
+        <Container>        
+            <div style={styleHeading}> <br/>
             Janissa Abreu 
+                <div style={styleSUBHeading}> 
+                Video Game Developer & Creative Consultant
+                </div>
+                <br/>
             </div>
+            
 
             <Row> {/* column 2 */}
                 <Col className="spacingforbutton">
@@ -52,9 +58,11 @@ const MainBody = () => {
                     </Button>
                 </Col>
                 <Col className="spacingforbutton">
-                    <Button className="buttonsize" variant="secondary" size="lg">
+                    <ul>
+                    <Button className="buttonsize" variant="secondary" size="lg" >
                         Art Gallery
                     </Button>
+                    </ul>
                 </Col>
                 <Col className="spacingforbutton">
                     <Button className="buttonsize" variant="secondary" size="lg">
