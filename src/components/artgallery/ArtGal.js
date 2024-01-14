@@ -3,6 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import RecycledLogo from '../../assets/recycledlogo.png';
 import DevilsAngelLogo from '../../assets/devilsangelogo.png';
 import OmenLove from '../../assets/omenlove.png';
+import LacedEyeCandy from '../../assets/lacedeyecandy.png';
+import FallingInDespair from '../../assets/fallingindespair.png';
+
 import NavbarMenu from '../NavbarMenu';
 //import { Component } from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -130,6 +133,7 @@ const ArtGal = () => {
             </Container>
         </div>
 
+
         <div className='OmenLoveImage'>
             <Container>
                 <Row>
@@ -157,8 +161,70 @@ const ArtGal = () => {
                 </Row>
 
                 <ColoredLine color="black" />
+            </Container>
+
+            <div className='LacedEyeCandyImage'>
+            <Container>
+                <Row>
+                    <Col> {/* column 1 */}
+                    <br></br>
+                        <div className="TitleImage" style={styleTitle}>
+                            PERSONAL ART
+                        </div>
+                        <div className="TitleImage" style={styleTitle}>
+                            Laced Eye Candy
+                        </div>
+                        <div className="DescriptionImage" style={styleUnderTitle} >
+                            I made this after I saw a documentary of men lacing women's drinks at bars.
+                        </div>
+                        <br></br>
+                    </Col>
+
+                    <Col className="recycledpic-column"> {/* column 2 */}
+                        <figure className='recycled'>
+                            <img src={LacedEyeCandy} alt="laced" />
+                        </figure>
+                    </Col>
+                    <br></br>
+                </Row>
+
+                <ColoredLine color="black" />
+            </Container>
+        </div>
+
+
+        <div className='FallingInDespairImage'>
+            <Container>
+                <Row>
+                    <Col className="FallingEpic-column"> {/* column 1 */}
+                    <figure className='FallingIn'>
+                        <img src={FallingInDespair} alt="FallingInDespair" />
+                    </figure>
+                    </Col>
+                    <Col>
+                    <br></br>
+                        <div className="TitleImage" style={styleTitle}>
+                        PERSONAL ART
+                        </div>
+                        <div className="TitleImage" style={styleTitle}>
+                        Falling in Despair
+                        </div>
+                        <br></br>
+                        <div className="DescriptionImage" style={styleUnderTitle}>
+                        Drawn when my pet cat of 14 years passed away, and all I could feel was as if I was falling.
+                        </div>
+                        <br></br>
+                    </Col>
+                </Row>
+
+                <ColoredLine color="black" />
 
             </Container>
+
+            
+        </div>
+
+
 
             {/* this is where i show the stuff i made at Lehman College job */}
 
