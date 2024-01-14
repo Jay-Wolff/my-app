@@ -4,7 +4,6 @@ import "./style.css";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //importing components
-import NavbarMenu from './components/NavbarMenu';
 import MainBody from './components/home/MainBody';
 import ArtGal from './components/artgallery/ArtGal';
 // import About from './components/about/About';
@@ -18,7 +17,6 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <NavbarMenu />
         <Route path="/" element={<MainBody />} />
         {/* <Route path="about" element={<About />} /> */}
         {/* <Route path="speaking" element={<PublicSpeaking />} /> */}

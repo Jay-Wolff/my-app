@@ -4,6 +4,7 @@ import RecycledLogo from '../../assets/recycledlogo.png';
 import DevilsAngelLogo from '../../assets/devilsangelogo.png';
 import OmenLove from '../../assets/omenlove.png';
 import NavbarMenu from '../NavbarMenu';
+//import { Component } from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
