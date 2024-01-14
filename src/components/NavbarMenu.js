@@ -19,11 +19,11 @@ const NavbarMenu = () => {
         <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home" style={navStyle}>JanissaAbreu.dev </Navbar.Brand>
+          <Navbar.Brand href="/" style={navStyle}>JanissaAbreu.dev </Navbar.Brand>
           <Nav className="topnav-left">
-            <Nav.Link href="#about" style={navStyle2}>About Me {" "} | </Nav.Link>
-            <Nav.Link href="#speaking" style={navStyle2}> Public Speaking {" "} |</Nav.Link>
-            <Nav.Link href="#contact" style={navStyle2}> {" "} Contact</Nav.Link>
+            <Nav.Link href="/about" style={navStyle2}>About Me {" "} | </Nav.Link>
+            <Nav.Link href="/speaking" style={navStyle2}> Public Speaking {" "} |</Nav.Link>
+            <Nav.Link href="/contact" style={navStyle2}> {" "} Contact</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

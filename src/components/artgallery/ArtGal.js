@@ -3,6 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import RecycledLogo from '../../assets/recycledlogo.png';
 import DevilsAngelLogo from '../../assets/devilsangelogo.png';
 import OmenLove from '../../assets/omenlove.png';
+import NavbarMenu from '../NavbarMenu';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
 
 const ArtGal = () => {
     
@@ -44,6 +48,9 @@ const ArtGal = () => {
 
     return (
     <>
+    {/* This is to import the NavBar and footer to the page */}
+        <NavbarMenu/>
+
         <div className='ArtGalHeading'>
         <Container>        
             <div style={styleHeading}> <br/>
@@ -154,9 +161,29 @@ const ArtGal = () => {
 
             {/* this is where i show the stuff i made at Lehman College job */}
 
-            
-
-            
+            <Container>
+                <div>
+                    I did stuff at lehman here it is:
+                </div>
+                <div className="SliderImagesForLehman">
+                    <row>
+                        <Carousel size="sm">
+                            <div>
+                                <img src={OmenLove} alt="omen"/>
+                                <p className="legend">Legend 1</p>
+                            </div>
+                            <div>
+                                <img src={OmenLove} alt="omen" />
+                                <p className="legend">Legend 2</p>
+                            </div>
+                            <div>
+                                <img src={OmenLove} alt="omen"/>
+                                <p className="legend">Legend 3</p>
+                            </div>
+                        </Carousel>
+                    </row>
+                </div>
+            </Container>
         </div>
 
         </>

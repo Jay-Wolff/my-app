@@ -1,12 +1,13 @@
 import React from 'react';
 import { Container, Row, Col, Button } from "react-bootstrap";
+import NavbarMenu from '../../components/NavbarMenu';
 import profileImage from '../../assets/jay.png';
 import profileSpeaking from '../../assets/jayspeaking.jpg';
 //can call other js files with import and manipulate them on their original js file
 import ContactForm from '../home/ContactForm';
+import FooterMenu from '../../components/FooterMenu';
 
-
-//import { Link as RouterLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 //import { Link , useLocation, useNavigate } from "react-router-dom";
 
 const MainBody = () => {
@@ -43,6 +44,9 @@ const MainBody = () => {
 
     return (
     <>
+    
+    <NavbarMenu />
+    
         <div className='MainBody'>
         <Container>        
             <div style={styleHeading}> <br/>
@@ -56,22 +60,27 @@ const MainBody = () => {
 
             <Row> {/* column 2 */}
                 <Col className="spacingforbutton">
+                <Link to="vgp">
                     <Button className="buttonsize" variant="secondary" size="lg">
                         Video Game Programming
                     </Button>
+                </Link>
                 </Col>
                 <Col className="spacingforbutton">
                     {/* Linking the Art Gallery button to the Art Gal page */}
-                   
+                   <Link to="art">
                         <Button className="buttonsize" variant="secondary" size="lg">
                             Art Gallery
                         </Button>
+                    </Link>
                     
                 </Col>
                 <Col className="spacingforbutton">
+                <Link to="poetry">
                     <Button className="buttonsize" variant="secondary" size="lg">
                         Poetry Collection
                     </Button>
+                </Link>
                 </Col>
             </Row>
             
@@ -165,6 +174,7 @@ const MainBody = () => {
         </Container>
         </div>
 
+        <FooterMenu className="FooterMenu"></FooterMenu>
     </>
     );
 };
