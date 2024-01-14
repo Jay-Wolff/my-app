@@ -6,6 +6,9 @@ import profileSpeaking from '../../assets/jayspeaking.jpg';
 import ContactForm from '../home/ContactForm';
 
 
+//import { Link as RouterLink } from 'react-router-dom';
+//import { Link , useLocation, useNavigate } from "react-router-dom";
+
 const MainBody = () => {
     
     /* styles that can be called later in the code*/
@@ -58,11 +61,12 @@ const MainBody = () => {
                     </Button>
                 </Col>
                 <Col className="spacingforbutton">
-                    <ul>
-                    <Button className="buttonsize" variant="secondary" size="lg" >
-                        Art Gallery
-                    </Button>
-                    </ul>
+                    {/* Linking the Art Gallery button to the Art Gal page */}
+                   
+                        <Button className="buttonsize" variant="secondary" size="lg">
+                            Art Gallery
+                        </Button>
+                    
                 </Col>
                 <Col className="spacingforbutton">
                     <Button className="buttonsize" variant="secondary" size="lg">

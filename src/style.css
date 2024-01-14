@@ -66,3 +66,14 @@
     height: 60px;
  }
 
+ .TitleImage{
+    fontFamily: 'georgia';
+    textAlign: 'center';
+    fontSize: '40px';
+ }
+
+ .DescriptionImage{
+    fontFamily: 'georgia';
+    textAlign: 'left';
+    fontSize: '20px';
+ }
